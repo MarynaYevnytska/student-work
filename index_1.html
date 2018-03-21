@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple todo lisy for Ruby Garage</title>
+    <!--<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">--->
+    <meta charset="UTF-8">
+    <meta name="description" lang="ru" content="Список дел"> <!--Описание содержимого-->
+    <meta name="description" lang="en" content="Tasks list"> <!--Description of the content-->
+    <meta name="keywords" lang="ru" content="Органайзер, список дел, упорядочить дела, все успеть, ничего не забыть "> <!--Ключевые слова вводяться через запятую-->
+    <meta name="keywords" lang="en" content="Organizer, tasts list, sort tasks, sort day, don't forget anything "> <!--Enter keywords separated by commas-->
+    <meta name="robots" content="index, follow"> <!--nofollow - переход по ссылкам запрещен, noindex - индексация запрещена-->
+    <link rel="stylesheet" href="index_1.css"> <!--подключение стилей на странице, link the CSS-->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/png"> <!--иконка на вкладке браузера-->
+</head>
+
+<body>
+
+<div class="container"> <!--- allover block--->
+
+    <div class="header">
+        <h1>SIMLE TODO LISTS</h1>
+        <h2 >FROM RUBY GARAGE</h2>
+    </div>
+
+  <div class="content"> <!---основные формы для добавлени и улаления задач и проектов-->
+      <script>
+        alert( 'There is JavaScript on this page. Do You want allow?' );
+       </script>
+
+    <div class="form-project">
+
+
+                <form name="form-project" class="F_form-project" action="УКАЗАТЬ АДРЕСС ОБРАБОТЧИКА ФОРМЫ" method="post"> <!---форма проекта для с возоможностью просматра и редактирования задач-->
+
+                    <div class="row-flex">
+                        <div id="pr_name"> <img src="document.png" width="25" height="25"  > Name_of_project </div>
+                        <button class="b_pr_row" name="insert" type="button" value="isert_project" > <img src="separate-document.png"  width="25" height="25"> </button>
+                        <button class="b_pr_row"  name="delete" type="button" value="delete_project"> <img src="delete.png"  width="25" height="25"> </button>
+
+                    </div>
+
+                        <div class="row_1-flex"> <img src="plus-math.png"  width="25" height="25">  <input id=en_field_ts name="task" type="text"> <input id="button_add_task" name="add_task" type="submit" value="Add Task"> </div>
+
+                    <fieldset> <!--<legend> List of tasks</legend>-->
+                        <div class="row_1_1-flex"> <input name="station_task" type="checkbox"> <div class="n_ts"> Name of task </div>
+                            <select  >
+                                <option value="1"> hight </option>
+                                <option value="2">low </option>
+                                <option value="3"> trivial </option>
+                            </select> <img src="sort.png" width="15" height="15"  >
+                            <button class="b_ts_row" name="insert" type="button" value="isert_project" > <img src="separate-document.png"  width="15" height="15"> </button>
+                            <button class="b_ts_row"  name="delete" type="button" value="delete_project"> <img src="delete.png"  width="15" height="15"> </button>
+                        </div>
+                        <div class="row_1_1-flex"> <input name="station_task" type="checkbox"> <div class="n_ts"> Name of task </div>
+                            <select  >
+                                <option value="1"> hight </option>
+                                <option value="2">low </option>
+                                <option value="3"> trivial </option>
+                            </select> <img src="sort.png" width="15" height="15"  >
+                            <button class="b_ts_row" name="insert" type="button" value="isert_project" > <img src="separate-document.png"  width="15" height="15"> </button>
+                            <button class="b_ts_row"  name="delete" type="button" value="delete_project"> <img src="delete.png"  width="15" height="15"> </button>
+                        </div>
+                        <div class="row_1_1-flex"> <input name="station_task" type="checkbox"> <div class="n_ts"> Name of task </div>
+                            <select  >
+                                <option value="1"> hight </option>
+                                <option value="2">low </option>
+                                <option value="3"> trivial </option>
+                            </select> <img src="sort.png" width="15" height="15"  >
+                            <button class="b_ts_row" name="insert" type="button" value="isert_project" > <img src="separate-document.png"  width="15" height="15"> </button>
+                            <button class="b_ts_row"  name="delete" type="button" value="delete_project"> <img src="delete.png"  width="15" height="15"> </button>
+                        </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+
+    </div>
+  </div>
+
+  <div class="footer">
+      <div class="row_1_2-flex">
+         <button id=button_add name="add_TODO_list" type="submit">
+             <img src="plus-math.png" width="25" height="25" alt="" style="vertical-align:middle"> Add TODO list
+         </button>  <!--кнопка добавить проект (button for addeding of project-->
+      <p id="text_footer_1"> &copy; Roby Garage 2018 </p>
+  </div>
+
+</div>
+
+</body>
+</html>
